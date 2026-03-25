@@ -1,81 +1,39 @@
-# Global Land Temperature Analysis: A Data-Driven Approach to Understanding Climate Change Patterns 🌡️🌍
+## Research Context
 
-## Overview
-This project analyzes global surface temperature data to understand climate change patterns, predict future temperature trends, and visualize temperature variations across different countries. The analysis includes data cleaning, statistical analysis, time series visualization, and future temperature predictions using machine learning.
+This project was developed alongside a comprehensive literature review of 7 peer-reviewed 
+climate science papers, identifying key gaps in existing research:
 
-## Features
-- 📊 Global temperature trend analysis
-- 🗺️ Country-wise temperature comparison
-- 📈 Linear regression for temperature prediction
-- 🔄 Interactive visualizations using Plotly
-- 🧹 Comprehensive data cleaning methods
-- 📉 Statistical analysis and insights
+- Most existing studies rely on limited data sources — this project addresses that by 
+  analysing 250+ years of records across 243 countries
+- Current research uses outdated statistical methods — this project applies ML-based 
+  predictive modelling as an improvement
+- Existing models lack regional granularity — this project identifies priority regions 
+  with the highest temperature increases
 
-## Requirements
-```python
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-plotly
-```
+## Key Contributions
 
-## Installation
-You can run this project directly in Google Colab or install the required packages using:
+- **Enhanced Data Processing** — built a preprocessing pipeline using two missing value 
+  strategies (removal vs. mean imputation by country) to maximise data retention while 
+  maintaining statistical validity
+- **Historical Trend Analysis** — comprehensive time-series analysis of long-term 
+  climate behaviour from the 1850s to present
+- **Regional Pattern Identification** — identified regions with the most significant 
+  temperature changes, useful for climate policy prioritisation
+- **Seasonal Variation Analysis** — quantified seasonal temperature differences to 
+  support climate change adaptation models
+- **Predictive Modelling** — linear regression forecasting framework serving as a 
+  reference for both research and policy planning
 
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn plotly
-```
+## Key Findings
 
-## Dataset
-The project uses the "GlobalLandTemperaturesByCountry.csv" dataset, which contains historical temperature records for various countries. The dataset includes:
-- Date
-- Average Temperature
-- Average Temperature Uncertainty
-- Country
+- Global average land temperatures have risen steadily since the 1850s baseline
+- Identified the top 10 countries with the highest recorded temperature increases
+- Mean imputation by country produced cleaner trend lines than row removal, 
+  better preserving regional climate variation
+- Predictive model projects continued warming if current trends persist, 
+  consistent with the 1.5–2°C thresholds discussed in IPCC literature
 
-## Key Visualizations
-1. Global Average Temperature Over Time
-2. Top 10 Countries with Highest Temperature Increase
-3. Interactive World Map of Average Temperatures
-4. Temperature Prediction Model Results
-![Temperature Prediction Graph](https://github.com/user-attachments/assets/03e97682-9a8e-4817-98e6-fca3cc793065)
+## Academic Report
 
-
-## Analysis Features
-- **Data Cleaning:** Two methods implemented
-  - Method 1: Removal of missing values
-  - Method 2: Mean imputation by country
-- **Statistical Analysis:** Basic and advanced statistics for temperature trends
-- **Time Series Analysis:** Global and country-wise temperature patterns
-- **Predictive Modeling:** Linear regression for future temperature forecasting
-- **Interactive Visualizations:** Using Plotly for dynamic data exploration
-
-## How to Use
-1. Open the notebook in Google Colab
-2. Upload the dataset to your Colab environment
-3. Run all cells sequentially
-4. Explore the visualizations and analysis results
-
-## Future Improvements
-- Incorporate additional climate-related variables
-- Implement advanced time series forecasting models
-- Analyze correlation with specific events/policies
-- Develop extreme weather event prediction models
-- Enhanced visualization techniques
-
-## Ethical Considerations
-- Data privacy and security
-- Responsible interpretation of climate predictions
-- Transparency in methodology
-- Collaboration with domain experts
-- Promotion of sustainable practices
-
-
-## License
-This project is open source and available under the [MIT License](LICENSE).
-
-## Acknowledgments
-- Thanks to Dr. Heyfa Ammar for guidance
-- Google Colab for providing the computational environment
+This project was completed with a full literature review and academic report.  
+📄 [View the Literature Review Report](./cs316_phase_2_2__1_.pdf)
